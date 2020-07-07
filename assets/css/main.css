@@ -1,41 +1,88 @@
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    z-index: 200;
-    background-color: white;
-    height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 200;
+  background-color: white;
+  height: 90px;
 }
 
 #header .logo {
-    display: inline-block;
-    width: 200px;
-    text-align: center;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
 }
 
 #header .logo a img {
-    width: 122px;
+  width: 122px;
 }
 
-#gnb ul li {
-    display: inline-block;
+#gnb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-/* 자동으로 서로 멀어지게 해야함 */
-#gnb ul li a {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #111;
-    line-height: 90px;
-    padding: 0 8px;
-    text-align: center;
-    transition: all 0.15s linear;
+#gnb > ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
 }
 
-#gnb ul li a:hover {
-    color: #eb6100;
+#gnb > ul li a {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #111;
+  text-align: center;
+  transition: all 0.15s linear;
+}
+
+#gnb > ul li a:hover {
+  color: #eb6100;
+}
+
+#gnb .quick-menu {
+  display: flex;
+}
+
+#gnb .quick-menu > ul {
+  display: flex;
+  align-items: center;
+}
+
+#gnb .quick-menu > ul li {
+  font-size: 0.82rem;
+  color: #999;
+}
+
+#gnb .quick-menu > ul li a {
+  color: #999;
+}
+
+#gnb .quick-menu > ul .divider {
+  margin: 0 12px;
+}
+
+#gnb .quick-menu .language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 27px;
+  width: 85px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+#gnb .quick-menu .language button {
+  font-size: 13px;
+  font-weight: bold;
+  color: #eb6100;
+  border: 0;
+  background-color: #fff;
+  box-shadow: none;
 }
