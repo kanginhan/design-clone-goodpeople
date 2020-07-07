@@ -24,11 +24,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
 }
 
 #gnb > ul {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   width: 45%;
 }
 
@@ -47,6 +49,8 @@
 
 #gnb .quick-menu {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 #gnb .quick-menu > ul {
@@ -85,4 +89,45 @@
   border: 0;
   background-color: #fff;
   box-shadow: none;
+}
+
+#gnb .quick-menu .sponsorship {
+  width: 190px;
+  height: 100%;
+}
+
+#gnb .quick-menu .sponsorship button {
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  box-shadow: none;
+  background-color: #eb6100;
+  transition: all 0.15s linear;
+}
+
+#gnb .quick-menu .sponsorship button:hover {
+  background-color: #144199;
+}
+
+#content {
+  margin-top: 90px;
+}
+
+#content .slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-image: url("/assets/images/slider_main_pc.jpg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content .slider .details {
+  padding: 0 12%;
+  color: #fff;
 }
