@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+dl {
+    margin-bottom: 0;
+}
+dl dd {
+    margin-bottom: 0;
+}
+
+address {
+    margin-bottom: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+button:hover, button:focus {
+    box-shadow: none;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #444;
+    box-shadow: none;
+    text-decoration: none;
+}

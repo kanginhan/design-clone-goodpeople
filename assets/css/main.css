@@ -1,0 +1,41 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 200;
+    background-color: white;
+    height: 90px;
+}
+
+#header .logo {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+#header .logo a img {
+    width: 122px;
+}
+
+#gnb ul li {
+    display: inline-block;
+}
+
+/* 자동으로 서로 멀어지게 해야함 */
+#gnb ul li a {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #111;
+    line-height: 90px;
+    padding: 0 8px;
+    text-align: center;
+    transition: all 0.15s linear;
+}
+
+#gnb ul li a:hover {
+    color: #eb6100;
+}
